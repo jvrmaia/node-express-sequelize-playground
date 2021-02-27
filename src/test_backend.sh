@@ -1,0 +1,16 @@
+#!/bin/bash
+
+curl -X POST http://localhost:3000/user/joao/add/developers && echo "\n"
+curl -X POST http://localhost:3000/user/nick/add/managers && echo "\n"
+curl -X POST http://localhost:3000/user/steven/add/leaders && echo "\n"
+curl -X POST http://localhost:3000/user/peter/add/visitors && echo "\n"
+curl -X POST http://localhost:3000/user/bob/add/visitors && echo "\n"
+curl -X DELETE http://localhost:3000/group/visitors/clear && echo "\n"
+curl -X POST http://localhost:3000/permission/VIEW/add?group=visitors && echo "\n"
+curl -X POST http://localhost:3000/permission/VIEW/add?group=developers && echo "\n"
+curl -X POST http://localhost:3000/permission/EDIT/add?group=leaders && echo "\n"
+curl -X POST http://localhost:3000/permission/ALL/add?group=managers && echo "\n"
+curl -X POST http://localhost:3000/permission/VIEW/add?user=alice && echo "\n"
+curl -X POST http://localhost:3000/permission/VIEW/add?user=maria && echo "\n"
+curl -X DELETE http://localhost:3000/permission/VIEW/clear?group=visitors && echo "\n"
+curl -X DELETE http://localhost:3000/permission/VIEW/clear?user=maria && echo "\n"

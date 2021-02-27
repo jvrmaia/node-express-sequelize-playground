@@ -1,0 +1,10 @@
+{
+  "name": "User Manager System",
+  "version": "0.0.1",
+  "description": "REST API documentation",
+  "title": "User Manager System Documentation",
+  "template": {
+  	"withCompare": true,
+  	"withGenerator": true
+  }
+}
